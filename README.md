@@ -30,7 +30,8 @@ A lightweight **voice AI agent demo** built with **FastAPI, OpenAI GPT + Whisper
 
 ---
 
-## Demo Screenshot: <img src="https://github.com/user-attachments/assets/8244bfa7-1d4c-4cd2-8b2e-a9ccd2e809d5" width="500" alt="VoiceFlow Agent Screenshot">
+## Demo Screenshot: 
+<img src="https://github.com/user-attachments/assets/8244bfa7-1d4c-4cd2-8b2e-a9ccd2e809d5" width="500" alt="VoiceFlow Agent Screenshot">
 
 ---
 
@@ -144,6 +145,7 @@ This demo was built to showcase:
 - **WebSocket Streaming**: Enable live, no-push-to-talk conversations.
 - **Enhanced TTS**: Integrate Piper or ElevenLabs for natural voices.
 - **Vector Memory**: Store user context across sessions for continuity.
+
 
 
 
