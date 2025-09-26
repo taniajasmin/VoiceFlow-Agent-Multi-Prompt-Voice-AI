@@ -1,0 +1,63 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Mini Voice Agent</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body { font-family: system-ui, Arial; max-width: 720px; margin: 2rem auto; }
+    button { padding: 10px 16px; font-size: 16px; }
+    .log { background: #f6f6f6; padding: 12px; border-radius: 8px; margin-top: 12px; white-space: pre-wrap; }
+  </style>
+</head>
+<body>
+  <h1>Mini Voice Agent (3 Nodes)</h1>
+  <p>Press and hold “Talk”, speak, release to send. First press returns the greeting.</p>
+  <button id="talkBtn">Hold to Talk</button>
+  <audio id="player" controls></audio>
+  <div class="log" id="log"></div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Mini Voice Agent</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root { --bg:#f7f7f8; --fg:#111; --muted:#6b7280; --bubble:#ffffff; --me:#dbeafe; }
+    body { font-family: system-ui, Arial; background: var(--bg); color: var(--fg);
+           max-width: 760px; margin: 2rem auto; padding: 0 1rem; }
+    h1 { margin: 0 0 0.5rem 0; }
+    p.sub { margin: 0 0 1rem 0; color: var(--muted); }
+    .toolbar { display:flex; align-items:center; gap:.75rem; margin-bottom: .75rem; }
+    button { padding: 10px 16px; font-size: 15px; border-radius: 10px; border: 1px solid #ddd; background:#fff; cursor:pointer; }
+    audio { height:36px; }
+    #chat { background:#fff; border:1px solid #e5e7eb; border-radius: 14px; padding: 12px;
+            max-height: 65vh; overflow-y: auto; }
+    .msg { display:flex; margin: 8px 0; }
+    .msg .bubble { padding: 10px 12px; border-radius: 14px; max-width: 78%; line-height: 1.35; }
+    .msg.user { justify-content: flex-end; }
+    .msg.user .bubble { background: var(--me); }
+    .msg.assistant { justify-content: flex-start; }
+    .msg.assistant .bubble { background: var(--bubble); }
+    .sys { text-align:center; font-size: 12px; color: var(--muted); margin: 8px 0; }
+  </style>
+</head>
+<body>
+  <h1>Mini Voice Agent (3 Nodes)</h1>
+  <p class="sub">Hold the button to talk. Release to send. The conversation history appears below.</p>
+
+  <div class="toolbar">
+    <button id="talkBtn">Hold to Talk</button>
+    <audio id="player" controls></audio>
+  </div>
+
+  <div id="chat" aria-live="polite" aria-label="Conversation"></div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
