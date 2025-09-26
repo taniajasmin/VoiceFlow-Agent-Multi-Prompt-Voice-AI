@@ -1,6 +1,6 @@
 # VoiceFlow Agent – Multi-Prompt Voice AI Demo
 
-![VoiceFlow Agent Screenshot](<img width="955" height="895" alt="Image" src="https://github.com/user-attachments/assets/8244bfa7-1d4c-4cd2-8b2e-a9ccd2e809d5" />)
+![VoiceFlow Agent Screenshot](https://github.com/user-attachments/assets/8244bfa7-1d4c-4cd2-8b2e-a9ccd2e809d5)
 
 A lightweight **voice AI agent demo** built with **FastAPI, OpenAI GPT + Whisper, and local TTS**. This project demonstrates a **three-node conversational flow** (Greeting → Intent Classification → Response Generation) with a chat-style web interface. Perfect for client demos showcasing real-time voice input, AI-driven intent recognition, and spoken responses.
 
@@ -142,3 +142,4 @@ This demo was built to showcase:
 - **WebSocket Streaming**: Enable live, no-push-to-talk conversations.
 - **Enhanced TTS**: Integrate Piper or ElevenLabs for natural voices.
 - **Vector Memory**: Store user context across sessions for continuity.
+
